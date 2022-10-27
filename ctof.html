@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Farenheit To Celsius</title>
+</head>
+  
+<body class="bodyy">
+  <h1 class="honeC">Enter tempreture in Celsius</h1>
+<input class="put" id="inputCelsius" type="number" placeholder="Enter Temp in Celsius"
+oninput="cTof(this.value)" onchange="cTof(this.value)">
+
+
+
+  <br><br>
+  <p class="put"><span id="outputCelcius"></span>&nbsp;Fahrenheit</p>
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br>
+  <h1 class="honeC">Return to Main </h1>
+  <button class="put" onclick="document.location='index.html'">Click To Return</button>
+
+  <script>
+    function cTof (valNum) {
+      valNum = parseFloat (valNum);
+      document.getElementById("outputCelcius").innerHTML=(1.8 * valNum) +32;
+    }
+  </script>
+  
+  
+</body>
+</html>

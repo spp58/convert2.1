@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Farenheit To Celsius</title>
+</head>
+
+<body class="bodyy">
+  <h1 class="honeC">Enter tempreture in Farenheit</h1>
+<input class="put" id="inputFahrenheit" type="number" placeholder="Enter Tempreture in Fahrenheit"
+oninput="fToc(this.value)" onchange="fToc(this.value)">
+
+<br>
+ <p class="put"><span id="outputCelcius"></span>&nbsp;Celsius</p>
+   <br><br><br><br><br><br><br><br><br><br><br><br>
+   <br><br><br><br><br><br><br><br><br><br><br><br>
+   <h1 class="honeC">Return to Main</h1>
+   <button class="put" onclick="document.location='index.html'">Click To Return
+  </button>
+
+  <script>
+    function fToc (valNum) {
+      valNum = parseFloat (valNum).toFixed(2);
+      document.getElementById("outputCelcius").innerHTML=(0.56 * valNum - 32);
+    }
+  </script>
+
+  
+</body>
+</html>
