@@ -5,13 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="calc.js"></script>
   <title>Miles To Kilometers</title>
 </head>
   
 <body class="bodyy">
   <h1 class="honeC">Enter distance in Miles</h1>
-<input class="put" id="inputKilometers" type="number" placeholder="Enter Distance in Miles"
-oninput="motf(this.value)" onchange="motf(this.value)">
+  <input class="put" id="inputKilometers" type="number" placeholder="Enter Distance in Miles"
+   oninput="motf(this.value)" onchange="motf(this.value)">
 
 
 
@@ -22,14 +23,5 @@ oninput="motf(this.value)" onchange="motf(this.value)">
   <br><br><br><br><br><br><br><br>
   <h1 class="honeC">Return to Main </h1>
   <button class="put" onclick="document.location='index.html'">Click To Return</button>
-
-  <script>
-    function motf (valNum) {
-      valNum = parseFloat (valNum);
-      document.getElementById("outputKilometers").innerHTML=(1.6 * valNum) ;
-    }
-  </script>
-  
-  
-</body>
+ </body>
 </html>
